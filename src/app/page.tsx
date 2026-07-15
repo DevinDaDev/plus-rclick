@@ -19,16 +19,16 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-primary">
+      <section className="bg-gradient-to-b from-accent-soft to-background">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
           <div className="max-w-3xl">
-            <p className="mb-4 inline-flex rounded-full border border-accent/40 bg-accent/15 px-3 py-1 text-sm font-medium text-accent-soft">
+            <p className="mb-4 inline-flex rounded-full bg-background px-3 py-1 text-sm font-medium text-accent shadow-sm">
               Included free for 1 year with qualifying purchases
             </p>
-            <h1 className="text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Rapid recovery when your hardware fails
             </h1>
-            <p className="mt-6 text-lg text-slate-300">
+            <p className="mt-6 text-lg text-muted-foreground">
               Right Click Plus keeps your staff up and running. When covered
               hardware fails, we ship a pre-configured spare fast, so you get
               back to work with minimum downtime. It comes at no additional cost
@@ -43,7 +43,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/network"
-                className="rounded-md border border-slate-500 px-6 py-3 text-base font-semibold text-primary-foreground transition-colors hover:bg-white/10"
+                className="rounded-md border border-border bg-background px-6 py-3 text-base font-semibold transition-colors hover:bg-muted"
               >
                 See what&apos;s covered
               </Link>
@@ -131,17 +131,17 @@ export default function Home() {
 
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="rounded-2xl bg-primary px-8 py-12 text-center">
-          <h2 className="text-2xl font-bold tracking-tight text-primary-foreground sm:text-3xl">
+        <div className="rounded-2xl bg-accent px-8 py-12 text-center">
+          <h2 className="text-2xl font-bold tracking-tight text-accent-foreground sm:text-3xl">
             Hardware down? Let&apos;s get you a spare.
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-slate-300">
+          <p className="mx-auto mt-3 max-w-xl text-accent-soft">
             Tell us what failed and we will start your rapid recovery. Target
             recovery for network equipment is 8 business hours.
           </p>
           <Link
             href="/request"
-            className="mt-6 inline-flex rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground transition-colors hover:bg-accent-hover"
+            className="mt-6 inline-flex rounded-md bg-background px-6 py-3 text-base font-semibold text-accent transition-colors hover:bg-muted"
           >
             Request my spare unit
           </Link>
