@@ -19,7 +19,7 @@ const included = [
 export default function NetworkPage() {
   return (
     <div>
-      <section className="texture-dots border-b border-border bg-accent-soft">
+      <section className="border-b border-border bg-accent-soft">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <p className="text-sm font-semibold uppercase tracking-wide text-accent">
             Plus for Network Equipment

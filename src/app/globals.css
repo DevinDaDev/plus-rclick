@@ -43,26 +43,6 @@ h3 {
   letter-spacing: -0.01em;
 }
 
-/* Signature: subtle dot grid behind hero/CTA surfaces */
-.texture-dots {
-  background-image: radial-gradient(
-    color-mix(in srgb, var(--color-accent) 14%, transparent) 1px,
-    transparent 1px
-  );
-  background-size: 22px 22px;
-}
-
-/* Home hero: dot grid layered over the soft gradient (one rule — Tailwind's
-   gradient utility would otherwise overwrite the texture's background-image) */
-.hero-texture {
-  background-image: radial-gradient(
-      color-mix(in srgb, var(--color-accent) 14%, transparent) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, var(--color-accent-soft), var(--color-background));
-  background-size: 22px 22px, 100% 100%;
-}
-
 ::selection {
   background: var(--color-accent);
   color: #ffffff;
