@@ -5,7 +5,7 @@ import RequestForm from "@/components/RequestForm";
 export const metadata: Metadata = {
   title: "Request my spare unit",
   description:
-    "Tell us what failed and we will start your rapid recovery. Target recovery for network equipment is 8 business hours.",
+    "Tell us what failed and we will start your rapid recovery. Target recovery for network equipment is 4 business hours.",
 };
 
 export default function RequestPage() {
@@ -16,7 +16,7 @@ export default function RequestPage() {
       </h1>
       <p className="mt-4 text-lg text-muted-foreground">
         Tell us what failed and we will start your rapid recovery. Target
-        recovery for network equipment is 8 business hours, same day.
+        recovery for network equipment is 4 business hours, same day.
       </p>
 
       <div className="mt-10">

@@ -86,7 +86,7 @@ export default function RequestForm() {
         </h2>
         <p className="mx-auto mt-3 max-w-md text-muted-foreground">
           Our team will contact you shortly to start your rapid recovery. Target
-          recovery for network equipment is 8 business hours.
+          recovery for network equipment is 4 business hours.
         </p>
         <button
           type="button"

@@ -105,7 +105,7 @@ function buildHtml(req: SpareRequest): string {
         <div style="padding:16px 24px;border-top:1px solid #e3e8ec;">
           <p style="margin:0;font-size:12px;color:#4e5c69;">
             Reply to this email to reach the requester directly.
-            Target recovery for network equipment is 8 business hours.
+            Target recovery for network equipment is 4 business hours.
           </p>
         </div>
       </div>

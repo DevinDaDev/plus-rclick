@@ -8,7 +8,7 @@ keep the customer's staff up and running with minimum downtime.
 Two offerings:
 
 - **Plus for Network Equipment** — routers, switches, and access points. Spares ship
-  pre-configured. Target recovery is 8 business hours (same day).
+  pre-configured. Target recovery is 4 business hours (same day).
 - **Plus for Business Computers** — a handful of standardized laptop/desktop models.
   Hard-drive swap first, temporary loaner for up to one month with a buy-out option.
 

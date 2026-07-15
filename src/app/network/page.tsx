@@ -6,7 +6,7 @@ import DeviceCard from "@/components/DeviceCard";
 export const metadata: Metadata = {
   title: "Plus for Network Equipment",
   description:
-    "Rapid recovery for the routers, switches, and access points that run your office. Target recovery is 8 business hours, same day, with a pre-configured spare.",
+    "Rapid recovery for the routers, switches, and access points that run your office. Target recovery is 4 business hours, same day, with a pre-configured spare.",
 };
 
 const included = [
@@ -30,7 +30,7 @@ export default function NetworkPage() {
           </h1>
           <p className="mt-3 max-w-2xl text-lg text-muted-foreground">
             Buy your network equipment from Right Click and rapid recovery comes
-            with it — a pre-configured spare, targeted at 8 business hours, same
+            with it — a pre-configured spare, targeted at 4 business hours, same
             day.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function NetworkPage() {
               <p className="text-sm font-medium text-muted-foreground">
                 Target recovery
               </p>
-              <p className="mt-2 text-4xl font-bold text-accent">8 hours</p>
+              <p className="mt-2 text-4xl font-bold text-accent">4 hours</p>
               <p className="mt-1 text-sm text-muted-foreground">
                 business hours, same day
               </p>

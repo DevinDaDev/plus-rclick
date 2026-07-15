@@ -74,7 +74,7 @@ export default function Home() {
             </h3>
             <p className="mt-2 flex-1 text-muted-foreground">
               Routers, switches, and access points that run your office. Spares
-              ship pre-configured with your settings. Target recovery is 8
+              ship pre-configured with your settings. Target recovery is 4
               business hours, same day.
             </p>
             <span className="mt-5 font-semibold text-accent group-hover:text-accent-hover">
@@ -137,7 +137,7 @@ export default function Home() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-accent-soft">
             Tell us what failed and we will start your rapid recovery. Target
-            recovery for network equipment is 8 business hours.
+            recovery for network equipment is 4 business hours.
           </p>
           <Link
             href="/request"
