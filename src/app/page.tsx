@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="hero-texture">
+      <section className="bg-gradient-to-b from-accent-soft to-background">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
           <div className="max-w-3xl">
             <p className="mb-4 inline-flex rounded-full bg-background px-3 py-1 text-sm font-medium text-accent shadow-sm">
