@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import type { Device } from "@/data/devices";
 import PlusBadge from "@/components/PlusBadge";
+import PurchaseButton from "@/components/PurchaseButton";
 
 function formatPrice(price: number) {
   return new Intl.NumberFormat("en-US", {
@@ -32,12 +32,7 @@ export default function DeviceCard({ device }: { device: Device }) {
             <p className="text-xs text-muted-foreground">Starting at</p>
             <p className="text-xl font-semibold">{formatPrice(device.price)}</p>
           </div>
-          <Link
-            href={`/request?device=${device.id}`}
-            className="rounded-md bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground transition-colors hover:bg-accent-hover"
-          >
-            Request spare
-          </Link>
+          <PurchaseButton deviceId={device.id} />
         </div>
       </div>
     </article>

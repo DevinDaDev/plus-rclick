@@ -29,6 +29,9 @@ export default function Footer() {
           <Link href="/computers" className="text-muted-foreground hover:text-foreground">
             Business Computers
           </Link>
+          <Link href="/register" className="text-muted-foreground hover:text-foreground">
+            Register Device
+          </Link>
           <Link href="/request" className="text-muted-foreground hover:text-foreground">
             Request Spare
           </Link>

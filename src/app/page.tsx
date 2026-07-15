@@ -36,16 +36,16 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href="/request"
+                href="/network"
                 className="rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground transition-colors hover:bg-accent-hover"
               >
-                Request my spare unit
+                Shop devices — Plus included
               </Link>
               <Link
-                href="/network"
+                href="/request"
                 className="rounded-md border border-border bg-background px-6 py-3 text-base font-semibold transition-colors hover:bg-muted"
               >
-                See what&apos;s covered
+                Request my spare unit
               </Link>
             </div>
           </div>
