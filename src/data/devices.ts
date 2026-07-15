@@ -28,7 +28,7 @@ export const networkDevices: Device[] = [
     shortDescription:
       "All-in-one router, security gateway, and network controller for growing offices.",
     price: 499,
-    imageUrl: "/placeholder-device.svg",
+    imageUrl: "/devices/router.svg",
     plusItemCode: NETWORK_PLUS_CODE,
   },
   {
@@ -38,7 +38,7 @@ export const networkDevices: Device[] = [
     shortDescription:
       "Managed 24-port switch with PoE to power phones, cameras, and access points.",
     price: 379,
-    imageUrl: "/placeholder-device.svg",
+    imageUrl: "/devices/switch.svg",
     plusItemCode: NETWORK_PLUS_CODE,
   },
   {
@@ -48,7 +48,7 @@ export const networkDevices: Device[] = [
     shortDescription:
       "High-capacity Wi-Fi 7 access point for fast, reliable coverage across the office.",
     price: 189,
-    imageUrl: "/placeholder-device.svg",
+    imageUrl: "/devices/access-point.svg",
     plusItemCode: NETWORK_PLUS_CODE,
   },
   {
@@ -58,7 +58,7 @@ export const networkDevices: Device[] = [
     shortDescription:
       "Business firewall with threat protection for securing your network perimeter.",
     price: 649,
-    imageUrl: "/placeholder-device.svg",
+    imageUrl: "/devices/firewall.svg",
     plusItemCode: NETWORK_PLUS_CODE,
   },
 ];
@@ -71,7 +71,7 @@ export const computerDevices: Device[] = [
     shortDescription:
       "Standard business laptop for everyday office work and travel.",
     price: 1249,
-    imageUrl: "/placeholder-device.svg",
+    imageUrl: "/devices/laptop.svg",
     plusItemCode: PC_PLUS_CODE,
   },
   {
@@ -81,7 +81,7 @@ export const computerDevices: Device[] = [
     shortDescription:
       "Mobile workstation for design, engineering, and other heavy workloads.",
     price: 1899,
-    imageUrl: "/placeholder-device.svg",
+    imageUrl: "/devices/laptop.svg",
     plusItemCode: PC_PLUS_CODE,
   },
   {
@@ -91,7 +91,7 @@ export const computerDevices: Device[] = [
     shortDescription:
       "Reliable desktop for fixed workstations and front-desk setups.",
     price: 999,
-    imageUrl: "/placeholder-device.svg",
+    imageUrl: "/devices/desktop.svg",
     plusItemCode: PC_PLUS_CODE,
   },
   {
@@ -101,7 +101,7 @@ export const computerDevices: Device[] = [
     shortDescription:
       "Durable business laptop with a full-day battery for hybrid teams.",
     price: 1349,
-    imageUrl: "/placeholder-device.svg",
+    imageUrl: "/devices/laptop.svg",
     plusItemCode: PC_PLUS_CODE,
   },
 ];

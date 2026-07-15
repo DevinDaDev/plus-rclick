@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img" aria-label="Desktop computer illustration">
+  <rect width="640" height="400" fill="#e3f2f8"/>
+  <g stroke="#0c6e94" stroke-width="6" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="170" y="110" width="220" height="150" rx="10"/>
+    <rect x="186" y="126" width="188" height="118" rx="4" fill="#e3f2f8" stroke="#9fcede"/>
+    <line x1="280" y1="260" x2="280" y2="292"/>
+    <line x1="236" y1="292" x2="324" y2="292"/>
+    <rect x="420" y="120" width="70" height="172" rx="10"/>
+    <circle cx="455" cy="150" r="7" fill="#0c6e94" stroke="none"/>
+    <line x1="435" y1="180" x2="475" y2="180" stroke="#9fcede"/>
+    <line x1="435" y1="200" x2="475" y2="200" stroke="#9fcede"/>
+  </g>
+</svg>

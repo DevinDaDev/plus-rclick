@@ -75,7 +75,7 @@ export default function RequestForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-border bg-background p-8 text-center shadow-sm">
+      <div className="rounded-xl border border-border bg-background p-8 text-center shadow-sm">
         <span className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-full bg-accent-soft text-accent">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <path d="M20 6 9 17l-5-5" />
@@ -110,7 +110,7 @@ export default function RequestForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-2xl border border-border bg-background p-6 shadow-sm sm:p-8"
+      className="rounded-xl border border-border bg-background p-6 shadow-sm sm:p-8"
       noValidate
     >
       <div className="grid gap-5 sm:grid-cols-2">

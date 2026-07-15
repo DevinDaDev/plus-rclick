@@ -60,7 +60,7 @@ export default function Home() {
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           <Link
             href="/network"
-            className="group flex flex-col rounded-2xl border border-border bg-background p-8 shadow-sm transition-shadow hover:shadow-md"
+            className="group flex flex-col rounded-xl border border-border bg-background p-8 transition-colors hover:border-accent"
           >
             <span className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-accent-soft text-accent">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -84,7 +84,7 @@ export default function Home() {
 
           <Link
             href="/computers"
-            className="group flex flex-col rounded-2xl border border-border bg-background p-8 shadow-sm transition-shadow hover:shadow-md"
+            className="group flex flex-col rounded-xl border border-border bg-background p-8 transition-colors hover:border-accent"
           >
             <span className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-accent-soft text-accent">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -131,7 +131,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="rounded-2xl bg-accent px-8 py-12 text-center">
+        <div className="rounded-xl bg-accent px-8 py-12 text-center">
           <h2 className="text-2xl font-bold tracking-tight text-accent-foreground sm:text-3xl">
             Hardware down? Let&apos;s get you a spare.
           </h2>

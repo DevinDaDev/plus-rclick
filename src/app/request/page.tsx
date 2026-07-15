@@ -22,7 +22,7 @@ export default function RequestPage() {
       <div className="mt-10">
         <Suspense
           fallback={
-            <div className="rounded-2xl border border-border bg-background p-8 text-muted-foreground shadow-sm">
+            <div className="rounded-xl border border-border bg-background p-8 text-muted-foreground shadow-sm">
               Loading form…
             </div>
           }

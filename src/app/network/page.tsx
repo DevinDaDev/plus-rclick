@@ -53,7 +53,7 @@ export default function NetworkPage() {
             </ul>
           </div>
 
-          <aside className="rounded-2xl border border-border bg-muted p-6">
+          <aside className="rounded-xl border border-border bg-muted p-6">
             <p className="text-sm font-medium text-muted-foreground">
               Target recovery
             </p>

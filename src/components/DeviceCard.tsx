@@ -13,7 +13,7 @@ function formatPrice(price: number) {
 
 export default function DeviceCard({ device }: { device: Device }) {
   return (
-    <article className="flex flex-col overflow-hidden rounded-xl border border-border bg-background shadow-sm transition-shadow hover:shadow-md">
+    <article className="flex flex-col overflow-hidden rounded-xl border border-border bg-background transition-colors hover:border-accent">
       <div className="relative aspect-[16/10] w-full bg-muted">
         <Image
           src={device.imageUrl}
