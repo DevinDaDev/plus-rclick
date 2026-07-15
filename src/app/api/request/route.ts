@@ -59,6 +59,64 @@ function buildSummary(req: SpareRequest): string {
   ].join("\n");
 }
 
+function escapeHtml(value: string): string {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function buildHtml(req: SpareRequest): string {
+  const device = getDeviceById(req.deviceModel);
+  const modelLabel = device ? device.name : req.deviceModel;
+  const rows: [string, string][] = [
+    ["Company", req.companyName],
+    ["Contact", req.contactName],
+    ["Email", req.email],
+    ["Phone", req.phone],
+    ["Preferred contact", req.preferredContact],
+    ["Device type", req.deviceType === "network" ? "Network equipment" : "Computer"],
+    ["Device model", modelLabel],
+    ["Serial number", req.serialNumber || "Not provided"],
+    ["Reason", req.reason || "Not provided"],
+  ];
+  const rowsHtml = rows
+    .map(
+      ([label, value], i) => `
+        <tr style="background:${i % 2 ? "#f8fafc" : "#ffffff"};">
+          <td style="padding:10px 16px;font-size:13px;color:#4e5c69;white-space:nowrap;vertical-align:top;">${label}</td>
+          <td style="padding:10px 16px;font-size:14px;color:#17222e;font-weight:500;">${escapeHtml(value)}</td>
+        </tr>`,
+    )
+    .join("");
+
+  return `<!doctype html>
+<html>
+  <body style="margin:0;padding:0;background:#eff2f4;font-family:'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif;">
+    <div style="max-width:560px;margin:24px auto;padding:0 12px;">
+      <div style="background:#0c6e94;border-radius:10px 10px 0 0;padding:20px 24px;">
+        <p style="margin:0;color:#ffffff;font-size:18px;font-weight:700;">Right Click <span style="color:#bfe3f0;">Plus</span></p>
+        <p style="margin:4px 0 0;color:#bfe3f0;font-size:13px;">New spare unit request</p>
+      </div>
+      <div style="background:#ffffff;border:1px solid #e3e8ec;border-top:none;border-radius:0 0 10px 10px;overflow:hidden;">
+        <table cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">${rowsHtml}
+        </table>
+        <div style="padding:16px 24px;border-top:1px solid #e3e8ec;">
+          <p style="margin:0;font-size:12px;color:#4e5c69;">
+            Reply to this email to reach the requester directly.
+            Target recovery for network equipment is 8 business hours.
+          </p>
+        </div>
+      </div>
+      <p style="text-align:center;margin:12px 0 0;font-size:11px;color:#8a97a3;">
+        Sent by the Right Click Plus request form &middot; plus.rclick.com
+      </p>
+    </div>
+  </body>
+</html>`;
+}
+
 /**
  * Single delivery function. Swap the body of this function to send requests to
  * a ticketing system later — the rest of the route does not need to change.
@@ -85,6 +143,7 @@ async function deliverRequest(req: SpareRequest): Promise<void> {
       reply_to: req.email,
       subject: `Plus spare request — ${req.companyName}`,
       text: summary,
+      html: buildHtml(req),
     }),
   });
 
