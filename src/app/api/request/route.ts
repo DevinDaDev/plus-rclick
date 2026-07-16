@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getDeviceById } from "@/data/devices";
+import { getServiceClient, upsertCustomer } from "@/lib/supabase";
 
 interface SpareRequest {
   companyName: string;
@@ -166,8 +167,38 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: validationError }, { status: 400 });
   }
 
+  // Persist the request as a ticket when Supabase is configured (Stage 2).
+  const req = body as SpareRequest;
+  const supabase = getServiceClient();
+  if (supabase) {
+    try {
+      const device = getDeviceById(req.deviceModel);
+      const customerId = await upsertCustomer(supabase, {
+        companyName: req.companyName,
+        contactName: req.contactName,
+        email: req.email,
+        phone: req.phone,
+      });
+      const { error } = await supabase.from("spare_requests").insert({
+        customer_id: customerId,
+        company_name: req.companyName,
+        contact_name: req.contactName,
+        email: req.email.toLowerCase(),
+        phone: req.phone,
+        device_id: req.deviceModel,
+        device_name: device ? device.name : req.deviceModel,
+        serial_number: req.serialNumber || null,
+        reason: req.reason || null,
+        preferred_contact: req.preferredContact,
+      });
+      if (error) throw error;
+    } catch (err) {
+      console.error("[plus-request] supabase persist failed:", err);
+    }
+  }
+
   try {
-    await deliverRequest(body as SpareRequest);
+    await deliverRequest(req);
   } catch (err) {
     console.error("[plus-request] delivery error:", err);
     return NextResponse.json(

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
+import { getServiceClient, upsertCustomer } from "@/lib/supabase";
 import { getDeviceById } from "@/data/devices";
 
 interface Registration {
@@ -33,9 +33,8 @@ function validate(body: Partial<Registration>): string | null {
 }
 
 export async function POST(request: Request) {
-  const supabaseUrl = process.env.SUPABASE_URL;
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!supabaseUrl || !supabaseKey) {
+  const supabase = getServiceClient();
+  if (!supabase) {
     return NextResponse.json(
       { error: "Device registration is not available yet. Our team will register your device for you." },
       { status: 503 },
@@ -55,8 +54,13 @@ export async function POST(request: Request) {
   }
 
   const device = getDeviceById(String(body.deviceModel))!;
-  const supabase = createClient(supabaseUrl, supabaseKey);
+  const customerId = await upsertCustomer(supabase, {
+    companyName: String(body.companyName).trim(),
+    contactName: String(body.contactName).trim(),
+    email: String(body.email).trim(),
+  });
   const { error } = await supabase.from("registered_devices").insert({
+    customer_id: customerId,
     company_name: String(body.companyName).trim(),
     contact_name: String(body.contactName).trim(),
     email: String(body.email).trim().toLowerCase(),
