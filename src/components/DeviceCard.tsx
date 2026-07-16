@@ -14,13 +14,13 @@ function formatPrice(price: number) {
 export default function DeviceCard({ device }: { device: Device }) {
   return (
     <article className="flex flex-col overflow-hidden rounded-xl border border-border bg-background transition-colors hover:border-accent">
-      <div className="relative aspect-[16/10] w-full bg-muted">
+      <div className="relative aspect-[16/10] w-full bg-white">
         <Image
           src={device.imageUrl}
           alt={device.name}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
-          className="object-cover"
+          className="object-contain p-6"
         />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">

@@ -28,7 +28,7 @@ export const networkDevices: Device[] = [
     shortDescription:
       "All-in-one router, security gateway, and network controller for growing offices.",
     price: 499,
-    imageUrl: "/devices/router.svg",
+    imageUrl: "/devices/udm-pro.png",
     plusItemCode: NETWORK_PLUS_CODE,
   },
   {
@@ -38,7 +38,7 @@ export const networkDevices: Device[] = [
     shortDescription:
       "Managed 24-port switch with PoE to power phones, cameras, and access points.",
     price: 379,
-    imageUrl: "/devices/switch.svg",
+    imageUrl: "/devices/usw-24-poe.png",
     plusItemCode: NETWORK_PLUS_CODE,
   },
   {
@@ -48,7 +48,7 @@ export const networkDevices: Device[] = [
     shortDescription:
       "High-capacity Wi-Fi 7 access point for fast, reliable coverage across the office.",
     price: 189,
-    imageUrl: "/devices/access-point.svg",
+    imageUrl: "/devices/u7-pro-ap.jpg",
     plusItemCode: NETWORK_PLUS_CODE,
   },
   {
@@ -58,7 +58,7 @@ export const networkDevices: Device[] = [
     shortDescription:
       "Business firewall with threat protection for securing your network perimeter.",
     price: 649,
-    imageUrl: "/devices/firewall.svg",
+    imageUrl: "/devices/sonicwall-tz.jpg",
     plusItemCode: NETWORK_PLUS_CODE,
   },
 ];
@@ -71,7 +71,7 @@ export const computerDevices: Device[] = [
     shortDescription:
       "Standard business laptop for everyday office work and travel.",
     price: 1249,
-    imageUrl: "/devices/laptop.svg",
+    imageUrl: "/devices/dell-latitude-5450.jpg",
     plusItemCode: PC_PLUS_CODE,
   },
   {
@@ -81,7 +81,7 @@ export const computerDevices: Device[] = [
     shortDescription:
       "Mobile workstation for design, engineering, and other heavy workloads.",
     price: 1899,
-    imageUrl: "/devices/laptop.svg",
+    imageUrl: "/devices/dell-precision-3591.jpg",
     plusItemCode: PC_PLUS_CODE,
   },
   {
@@ -91,7 +91,7 @@ export const computerDevices: Device[] = [
     shortDescription:
       "Reliable desktop for fixed workstations and front-desk setups.",
     price: 999,
-    imageUrl: "/devices/desktop.svg",
+    imageUrl: "/devices/dell-optiplex-7020.jpg",
     plusItemCode: PC_PLUS_CODE,
   },
   {
@@ -101,7 +101,7 @@ export const computerDevices: Device[] = [
     shortDescription:
       "Durable business laptop with a full-day battery for hybrid teams.",
     price: 1349,
-    imageUrl: "/devices/laptop.svg",
+    imageUrl: "/devices/lenovo-thinkpad-t14.jpg",
     plusItemCode: PC_PLUS_CODE,
   },
 ];
