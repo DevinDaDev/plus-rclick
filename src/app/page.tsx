@@ -55,7 +55,7 @@ export default function Home() {
     <div>
       {/* Hero */}
       <section className="bg-gradient-to-b from-accent-soft to-background">
-        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+        <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
           {/* Text stacks above the image on small screens */}
           <div className="mx-auto max-w-3xl text-center md:hidden">
             <HeroContent />
@@ -65,7 +65,7 @@ export default function Home() {
               src="/brand/hero-office.jpg"
               alt="The Right Click team at work beside the spare-equipment server room"
               width={1264}
-              height={848}
+              height={525}
               priority
               className="h-auto w-full"
             />
@@ -80,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* Two offerings */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6">
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
           Two ways Plus keeps you covered
         </h2>
