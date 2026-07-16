@@ -1,22 +1,24 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Neutrals carry a slight blue-slate tint — deliberately off Tailwind's stock scale */
+  /* Brand palette from the RC Plus flyers and logo guide */
   --color-background: #ffffff;
-  --color-foreground: #17222e;
-  --color-muted: #eff2f4;
-  --color-muted-foreground: #4e5c69;
-  --color-border: #e3e8ec;
+  --color-foreground: #1b3a57;
+  --color-muted: #eef4f9;
+  --color-muted-foreground: #4e6274;
+  --color-border: #dfe8ef;
 
-  /* Brand accent: RC deep teal-blue (custom, not a Tailwind palette value) */
-  --color-accent: #0c6e94;
-  --color-accent-hover: #095a7a;
-  --color-accent-soft: #e3f2f8;
+  /* Right Click brand blue (rgb# 0498d6 per logo guide) */
+  --color-accent: #0498d6;
+  --color-accent-hover: #037cb0;
+  --color-accent-soft: #e6f5fc;
   --color-accent-foreground: #ffffff;
 
-  --font-sans: var(--font-body), system-ui, -apple-system, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif;
-  --font-display: var(--font-bricolage), var(--font-body), system-ui, sans-serif;
+  /* Plus orange from the service logos */
+  --color-plus: #f46a21;
+
+  --font-sans: var(--font-nunito), system-ui, -apple-system, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -39,8 +41,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--font-display);
-  letter-spacing: -0.01em;
+  font-weight: 800;
 }
 
 ::selection {

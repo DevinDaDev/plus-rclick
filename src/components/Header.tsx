@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -18,8 +19,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <Link href="/" className="text-lg font-semibold tracking-tight">
-          Right Click <span className="text-accent">Plus</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/brand/plus-lockup.png"
+            alt="Right Click Plus"
+            width={563}
+            height={443}
+            priority
+            className="h-14 w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">

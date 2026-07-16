@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const steps = [
@@ -25,8 +26,9 @@ export default function Home() {
             <p className="mb-4 inline-flex rounded-full bg-background px-3 py-1 text-sm font-medium text-accent shadow-sm">
               Included free for 1 year with qualifying purchases
             </p>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Rapid recovery when your hardware fails
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
+              Rapid recovery when your hardware fails. That&apos;s{" "}
+              <span className="italic text-plus">Plus</span>.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
               Right Click Plus keeps your staff up and running. When covered
@@ -62,15 +64,18 @@ export default function Home() {
             href="/network"
             className="group flex flex-col rounded-xl border border-border bg-background p-8 transition-colors hover:border-accent"
           >
-            <span className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-accent-soft text-accent">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="6" rx="1" />
-                <rect x="3" y="14" width="18" height="6" rx="1" />
-                <path d="M7 7h.01M7 17h.01" />
-              </svg>
-            </span>
-            <h3 className="mt-5 text-xl font-semibold">
-              Plus for Network Equipment
+            <Image
+              src="/brand/plus-switch.png"
+              alt=""
+              width={1024}
+              height={1024}
+              className="h-14 w-14"
+            />
+            <h3 className="mt-5 text-xl font-extrabold">
+              Plus <span className="italic text-plus">Switch</span>{" "}
+              <span className="font-semibold text-muted-foreground">
+                — Network Equipment
+              </span>
             </h3>
             <p className="mt-2 flex-1 text-muted-foreground">
               Routers, switches, and access points that run your office. We
@@ -86,14 +91,18 @@ export default function Home() {
             href="/computers"
             className="group flex flex-col rounded-xl border border-border bg-background p-8 transition-colors hover:border-accent"
           >
-            <span className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-accent-soft text-accent">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="12" rx="2" />
-                <path d="M2 20h20" />
-              </svg>
-            </span>
-            <h3 className="mt-5 text-xl font-semibold">
-              Plus for Business Computers
+            <Image
+              src="/brand/plus-computer.png"
+              alt=""
+              width={1024}
+              height={1024}
+              className="h-14 w-14"
+            />
+            <h3 className="mt-5 text-xl font-extrabold">
+              Plus <span className="italic text-plus">Computer</span>{" "}
+              <span className="font-semibold text-muted-foreground">
+                — Business Computers
+              </span>
             </h3>
             <p className="mt-2 flex-1 text-muted-foreground">
               Standard laptops and desktops from Right Click. We keep a spare

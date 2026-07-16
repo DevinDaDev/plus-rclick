@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { computerDevices } from "@/data/devices";
 import DeviceCard from "@/components/DeviceCard";
@@ -26,17 +27,42 @@ export default function ComputersPage() {
       {/* Compact hero + devices above the fold */}
       <section className="border-b border-border bg-accent-soft">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-          <p className="text-sm font-semibold uppercase tracking-wide text-accent">
-            Plus for Business Computers
-          </p>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-            Business computers with 1 year of Plus included
+          <div className="flex items-center gap-4">
+            <Image
+              src="/brand/plus-computer.png"
+              alt="Plus Computer logo"
+              width={1024}
+              height={1024}
+              priority
+              className="h-16 w-16"
+            />
+            <div>
+              <p className="text-2xl font-extrabold">
+                Plus <span className="italic text-plus">Computer</span>
+              </p>
+              <p className="text-xs font-bold uppercase tracking-widest text-accent">
+                A Right Click Service
+              </p>
+            </div>
+          </div>
+          <h1 className="mt-6 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl">
+            When a computer goes down, your team keeps working.
           </h1>
           <p className="mt-3 max-w-2xl text-lg text-muted-foreground">
             Buy a standardized model from Right Click and we keep a spare ready
             with your base-level company configuration — so your staff stay up
             and running.
           </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {["Standard laptops", "Standard desktops"].map((chip) => (
+              <span
+                key={chip}
+                className="rounded-full border border-border bg-background px-4 py-2 text-sm font-bold"
+              >
+                {chip}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 

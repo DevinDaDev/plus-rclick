@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { networkDevices } from "@/data/devices";
 import DeviceCard from "@/components/DeviceCard";
@@ -22,11 +23,27 @@ export default function NetworkPage() {
       {/* Compact hero + devices above the fold */}
       <section className="border-b border-border bg-accent-soft">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-          <p className="text-sm font-semibold uppercase tracking-wide text-accent">
-            Plus for Network Equipment
-          </p>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-            Your spare is pre-configured and already on our shelf
+          <div className="flex items-center gap-4">
+            <Image
+              src="/brand/plus-switch.png"
+              alt="Plus Switch logo"
+              width={1024}
+              height={1024}
+              priority
+              className="h-16 w-16"
+            />
+            <div>
+              <p className="text-2xl font-extrabold">
+                Plus <span className="italic text-plus">Switch</span>
+              </p>
+              <p className="text-xs font-bold uppercase tracking-widest text-accent">
+                A Right Click Service
+              </p>
+            </div>
+          </div>
+          <h1 className="mt-6 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl">
+            Some things are too important to wait on. That&apos;s{" "}
+            <span className="italic text-plus">Plus</span>.
           </h1>
           <p className="mt-3 max-w-2xl text-lg text-muted-foreground">
             Buy your network equipment from Right Click and we store a spare
@@ -34,6 +51,18 @@ export default function NetworkPage() {
             ships ready to plug in — no reprogramming, targeted at 4 business
             hours, same day. One year of Plus is included.
           </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {["Network switches", "Routers & gateways", "Firewalls", "Wi-Fi access points"].map(
+              (chip) => (
+                <span
+                  key={chip}
+                  className="rounded-full border border-border bg-background px-4 py-2 text-sm font-bold"
+                >
+                  {chip}
+                </span>
+              ),
+            )}
+          </div>
         </div>
       </section>
 
