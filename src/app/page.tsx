@@ -19,12 +19,12 @@ const steps = [
 function HeroContent() {
   return (
     <>
-      <p className="mb-4 inline-flex rounded-full bg-background px-3 py-1 text-sm font-medium text-accent shadow-sm">
+      <p className="mb-4 inline-flex rounded-full bg-background px-3 py-1 text-sm font-bold text-accent shadow-sm">
         Included free for 1 year with qualifying purchases
       </p>
-      <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-        Rapid recovery when your hardware fails. That&apos;s{" "}
-        <span className="italic text-plus">Plus</span>.
+      <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-[2.6rem] lg:leading-tight">
+        <span className="block whitespace-nowrap">Rapid recovery when your hardware fails.</span>
+        <span className="block">That&apos;s <span className="italic text-plus">Plus</span>.</span>
       </h1>
       <p className="mt-6 text-lg text-foreground/80">
         Right Click Plus keeps your staff up and running. When covered hardware
@@ -71,7 +71,7 @@ export default function Home() {
             />
             {/* Overlaid on the faded white center on md+ */}
             <div className="absolute inset-0 hidden items-center justify-center md:flex">
-              <div className="max-w-2xl px-8 text-center">
+              <div className="max-w-4xl px-8 text-center">
                 <HeroContent />
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function Home() {
               className="h-14 w-14"
             />
             <h3 className="mt-5 text-xl font-extrabold">
-              Plus <span className="italic text-plus">Switch</span>{" "}
+              <span className="italic text-plus">Plus</span>{" "}
               <span className="font-semibold text-muted-foreground">
                 — Network Equipment
               </span>
@@ -124,7 +124,7 @@ export default function Home() {
               className="h-14 w-14"
             />
             <h3 className="mt-5 text-xl font-extrabold">
-              Plus <span className="italic text-plus">Computer</span>{" "}
+              <span className="italic text-plus">Plus</span>{" "}
               <span className="font-semibold text-muted-foreground">
                 — Business Computers
               </span>

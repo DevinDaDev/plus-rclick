@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-start md:justify-between">
         <div className="max-w-sm">
           <p className="text-base font-semibold">
-            Right Click <span className="text-accent">Plus</span>
+            Right Click <span className="italic font-bold text-plus">Plus</span>
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
             Plus is included for one year with qualifying purchases.
