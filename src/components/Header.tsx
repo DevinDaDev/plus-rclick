@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import CartButton from "@/components/CartButton";
 
 const links = [
   { href: "/", label: "Home" },
@@ -56,8 +57,11 @@ export default function Header() {
           >
             Request my spare
           </Link>
+          <CartButton />
         </nav>
 
+        <div className="flex items-center md:hidden">
+          <CartButton />
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
@@ -73,6 +77,7 @@ export default function Header() {
             )}
           </svg>
         </button>
+        </div>
       </div>
 
       {open && (

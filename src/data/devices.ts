@@ -15,6 +15,8 @@ export interface Device {
   imageUrl: string;
   /** Line-item code used when Plus is added to an order. */
   plusItemCode: string;
+  /** Short spec bullets shown on the product detail page. TODO: Right Click to confirm. */
+  specs: string[];
 }
 
 const NETWORK_PLUS_CODE = "RC-PLUS-NETWORK-1YR";
@@ -30,6 +32,12 @@ export const networkDevices: Device[] = [
     price: 499,
     imageUrl: "/devices/udm-pro.png",
     plusItemCode: NETWORK_PLUS_CODE,
+    specs: [
+      "All-in-one router, security gateway, and UniFi controller",
+      "10G SFP+ WAN and LAN ports plus 8-port gigabit switch",
+      "Built-in threat management and network monitoring",
+      "Rack-mountable, 1U",
+    ],
   },
   {
     id: "usw-24-poe",
@@ -40,6 +48,12 @@ export const networkDevices: Device[] = [
     price: 379,
     imageUrl: "/devices/usw-24-poe.png",
     plusItemCode: NETWORK_PLUS_CODE,
+    specs: [
+      "24 gigabit RJ45 ports, 16 with PoE+",
+      "2 SFP uplink ports",
+      "Managed through the UniFi controller",
+      "Quiet, rack-mountable design",
+    ],
   },
   {
     id: "u7-pro-ap",
@@ -50,6 +64,12 @@ export const networkDevices: Device[] = [
     price: 189,
     imageUrl: "/devices/u7-pro-ap.jpg",
     plusItemCode: NETWORK_PLUS_CODE,
+    specs: [
+      "Wi-Fi 7 tri-band access point",
+      "Coverage for high-density offices",
+      "PoE+ powered, ceiling or wall mount",
+      "Managed through the UniFi controller",
+    ],
   },
   {
     id: "sonicwall-tz",
@@ -60,6 +80,12 @@ export const networkDevices: Device[] = [
     price: 649,
     imageUrl: "/devices/sonicwall-tz.jpg",
     plusItemCode: NETWORK_PLUS_CODE,
+    specs: [
+      "Business firewall with deep packet inspection",
+      "Threat protection and content filtering",
+      "VPN support for remote workers",
+      "Desktop form factor",
+    ],
   },
 ];
 
@@ -73,6 +99,12 @@ export const computerDevices: Device[] = [
     price: 1249,
     imageUrl: "/devices/dell-latitude-5450.jpg",
     plusItemCode: PC_PLUS_CODE,
+    specs: [
+      "14-inch business laptop",
+      "Intel Core Ultra processor",
+      "16 GB RAM, 512 GB SSD",
+      "Windows 11 Pro",
+    ],
   },
   {
     id: "dell-precision-3591",
@@ -83,6 +115,12 @@ export const computerDevices: Device[] = [
     price: 1899,
     imageUrl: "/devices/dell-precision-3591.jpg",
     plusItemCode: PC_PLUS_CODE,
+    specs: [
+      "15.6-inch mobile workstation",
+      "Intel Core Ultra, discrete NVIDIA graphics",
+      "32 GB RAM, 1 TB SSD",
+      "Windows 11 Pro",
+    ],
   },
   {
     id: "dell-optiplex-7020",
@@ -93,6 +131,12 @@ export const computerDevices: Device[] = [
     price: 999,
     imageUrl: "/devices/dell-optiplex-7020.jpg",
     plusItemCode: PC_PLUS_CODE,
+    specs: [
+      "Compact business desktop",
+      "Intel Core processor",
+      "16 GB RAM, 512 GB SSD",
+      "Windows 11 Pro",
+    ],
   },
   {
     id: "lenovo-thinkpad-t14",
@@ -103,6 +147,12 @@ export const computerDevices: Device[] = [
     price: 1349,
     imageUrl: "/devices/lenovo-thinkpad-t14.jpg",
     plusItemCode: PC_PLUS_CODE,
+    specs: [
+      "14-inch business laptop",
+      "Intel Core Ultra processor",
+      "16 GB RAM, 512 GB SSD",
+      "Windows 11 Pro, full-day battery",
+    ],
   },
 ];
 
