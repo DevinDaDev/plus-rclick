@@ -23,10 +23,10 @@ export default function Header() {
           <Image
             src="/brand/plus-lockup.png"
             alt="Right Click Plus"
-            width={610}
-            height={409}
+            width={442}
+            height={100}
             priority
-            className="h-14 w-auto"
+            className="h-10 w-auto"
           />
         </Link>
 
