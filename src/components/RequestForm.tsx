@@ -15,6 +15,7 @@ function initialDeviceType(deviceId: string | null): DeviceType {
 export default function RequestForm() {
   const searchParams = useSearchParams();
   const presetDeviceId = searchParams.get("device");
+  const presetSerial = searchParams.get("serial") || "";
 
   const [deviceType, setDeviceType] = useState<DeviceType>(
     initialDeviceType(presetDeviceId),
@@ -222,6 +223,7 @@ export default function RequestForm() {
             id="serialNumber"
             name="serialNumber"
             type="text"
+            defaultValue={presetSerial}
             className={inputClass}
           />
         </div>

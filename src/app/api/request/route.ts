@@ -179,8 +179,18 @@ export async function POST(request: Request) {
         email: req.email,
         phone: req.phone,
       });
+      let registeredDeviceId: string | null = null;
+      if (req.serialNumber) {
+        const { data: rd } = await supabase
+          .from("registered_devices")
+          .select("id")
+          .eq("serial_number", req.serialNumber.trim())
+          .maybeSingle();
+        registeredDeviceId = rd?.id ?? null;
+      }
       const { error } = await supabase.from("spare_requests").insert({
         customer_id: customerId,
+        registered_device_id: registeredDeviceId,
         company_name: req.companyName,
         contact_name: req.contactName,
         email: req.email.toLowerCase(),

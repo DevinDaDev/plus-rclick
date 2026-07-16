@@ -129,7 +129,7 @@ export default async function AccountPage() {
                   coverage until {dateFmt(d.plus_expires_at)}
                 </p>
                 <Link
-                  href={`/request?device=${encodeURIComponent(d.device_id)}`}
+                  href={`/request?device=${encodeURIComponent(d.device_id)}&serial=${encodeURIComponent(d.serial_number)}`}
                   className="mt-4 inline-flex rounded-md bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground hover:bg-accent-hover"
                 >
                   Request spare
