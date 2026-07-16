@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 };
 
 const included = [
+  "We store a spare unit at the Right Click office, ready to go. Large customers can keep their own spare on-site.",
+  "We keep a backup of your device configuration, so the spare ships pre-configured with your settings.",
+  "No reprogramming on arrival. Plug it in and your network is back.",
   "Coverage for Ubiquiti and SonicWall routers, network switches, and Wi-Fi access points bought from Right Click.",
-  "A spare unit kept ready at the Right Click office. Large customers can keep their own spare on-site.",
-  "A saved backup of your device configuration, so the spare arrives pre-configured with your settings.",
-  "No reprogramming on arrival. The spare is ready to run your network.",
 ];
 
 export default function NetworkPage() {
@@ -26,12 +26,13 @@ export default function NetworkPage() {
             Plus for Network Equipment
           </p>
           <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-            Network gear with 1 year of Plus included
+            Your spare is pre-configured and already on our shelf
           </h1>
           <p className="mt-3 max-w-2xl text-lg text-muted-foreground">
-            Buy your network equipment from Right Click and rapid recovery comes
-            with it — a pre-configured spare, targeted at 4 business hours, same
-            day.
+            Buy your network equipment from Right Click and we store a spare
+            loaded with your configuration. When yours fails, the replacement
+            ships ready to plug in — no reprogramming, targeted at 4 business
+            hours, same day. One year of Plus is included.
           </p>
         </div>
       </section>

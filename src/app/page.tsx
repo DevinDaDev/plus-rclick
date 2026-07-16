@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const steps = [
   {
-    title: "We keep a spare",
-    body: "When you buy qualifying hardware, Right Click keeps a matching spare and a backup of your device configuration.",
+    title: "We store a pre-configured spare",
+    body: "When you buy qualifying hardware, Right Click stores a matching spare loaded with your configuration, ready to ship.",
   },
   {
     title: "You tell us it failed",
@@ -73,9 +73,9 @@ export default function Home() {
               Plus for Network Equipment
             </h3>
             <p className="mt-2 flex-1 text-muted-foreground">
-              Routers, switches, and access points that run your office. Spares
-              ship pre-configured with your settings. Target recovery is 4
-              business hours, same day.
+              Routers, switches, and access points that run your office. We
+              store a spare pre-configured with your settings, so it ships
+              ready to plug in. Target recovery is 4 business hours, same day.
             </p>
             <span className="mt-5 font-semibold text-accent group-hover:text-accent-hover">
               Explore network coverage →
