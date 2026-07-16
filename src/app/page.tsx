@@ -35,7 +35,7 @@ function HeroContent() {
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Link
           href="/network"
-          className="rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground transition-colors hover:bg-accent-hover"
+          className="rounded-md border border-accent/40 bg-accent-soft px-6 py-3 text-base font-bold text-foreground transition-colors hover:bg-[#d3edf9]"
         >
           Shop devices — <span className="italic font-semibold text-plus">Plus</span> included
         </Link>
