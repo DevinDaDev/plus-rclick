@@ -16,39 +16,64 @@ const steps = [
   },
 ];
 
+function HeroContent() {
+  return (
+    <>
+      <p className="mb-4 inline-flex rounded-full bg-background px-3 py-1 text-sm font-medium text-accent shadow-sm">
+        Included free for 1 year with qualifying purchases
+      </p>
+      <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
+        Rapid recovery when your hardware fails. That&apos;s{" "}
+        <span className="italic text-plus">Plus</span>.
+      </h1>
+      <p className="mt-6 text-lg text-foreground/80">
+        Right Click Plus keeps your staff up and running. When covered hardware
+        fails, we ship a pre-configured spare fast, so you get back to work
+        with minimum downtime. It comes at no additional cost for one year with
+        qualifying hardware you buy from Right Click.
+      </p>
+      <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <Link
+          href="/network"
+          className="rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground transition-colors hover:bg-accent-hover"
+        >
+          Shop devices — Plus included
+        </Link>
+        <Link
+          href="/request"
+          className="rounded-md border border-border bg-background px-6 py-3 text-base font-semibold transition-colors hover:bg-muted"
+        >
+          Request my spare unit
+        </Link>
+      </div>
+    </>
+  );
+}
+
 export default function Home() {
   return (
     <div>
       {/* Hero */}
       <section className="bg-gradient-to-b from-accent-soft to-background">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
-          <div className="max-w-3xl">
-            <p className="mb-4 inline-flex rounded-full bg-background px-3 py-1 text-sm font-medium text-accent shadow-sm">
-              Included free for 1 year with qualifying purchases
-            </p>
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-              Rapid recovery when your hardware fails. That&apos;s{" "}
-              <span className="italic text-plus">Plus</span>.
-            </h1>
-            <p className="mt-6 text-lg text-muted-foreground">
-              Right Click Plus keeps your staff up and running. When covered
-              hardware fails, we ship a pre-configured spare fast, so you get
-              back to work with minimum downtime. It comes at no additional cost
-              for one year with qualifying hardware you buy from Right Click.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/network"
-                className="rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground transition-colors hover:bg-accent-hover"
-              >
-                Shop devices — Plus included
-              </Link>
-              <Link
-                href="/request"
-                className="rounded-md border border-border bg-background px-6 py-3 text-base font-semibold transition-colors hover:bg-muted"
-              >
-                Request my spare unit
-              </Link>
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+          {/* Text stacks above the image on small screens */}
+          <div className="mx-auto max-w-3xl text-center md:hidden">
+            <HeroContent />
+          </div>
+          <div className="relative mt-6 overflow-hidden rounded-xl md:mt-0">
+            <Image
+              src="/brand/hero-office.jpg"
+              alt="The Right Click team at work beside the spare-equipment server room"
+              width={1264}
+              height={848}
+              priority
+              className="h-auto w-full"
+            />
+            {/* Overlaid on the faded white center on md+ */}
+            <div className="absolute inset-0 hidden items-center justify-center md:flex">
+              <div className="max-w-2xl px-8 text-center">
+                <HeroContent />
+              </div>
             </div>
           </div>
         </div>
