@@ -14,6 +14,9 @@
   --color-accent-soft: #e6f5fc;
   --color-accent-foreground: #ffffff;
 
+  /* Deep blue for high-emphasis panels */
+  --color-accent-deep: #045f86;
+
   /* Plus orange from the service logos */
   --color-plus: #f46a21;
 

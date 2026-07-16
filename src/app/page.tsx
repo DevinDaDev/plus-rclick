@@ -27,7 +27,7 @@ function HeroContent() {
         <span className="block">That&apos;s <span className="italic text-plus">Plus</span>.</span>
       </h1>
       <p className="mt-6 text-lg text-foreground/80">
-        Right Click Plus keeps your staff up and running. When covered hardware
+        Right Click <span className="italic font-semibold text-plus">Plus</span> keeps your staff up and running. When covered hardware
         fails, we ship a pre-configured spare fast, so you get back to work
         with minimum downtime. It comes at no additional cost for one year with
         qualifying hardware you buy from Right Click.
@@ -37,7 +37,7 @@ function HeroContent() {
           href="/network"
           className="rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground transition-colors hover:bg-accent-hover"
         >
-          Shop devices — Plus included
+          Shop devices — <span className="italic font-semibold text-plus">Plus</span> included
         </Link>
         <Link
           href="/request"
@@ -82,7 +82,7 @@ export default function Home() {
       {/* Two offerings */}
       <section className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6">
         <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-          Two ways Plus keeps you covered
+          Two ways <span className="italic font-semibold text-plus">Plus</span> keeps you covered
         </h2>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           <Link
@@ -165,7 +165,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="rounded-xl bg-accent px-8 py-12 text-center">
+        <div className="rounded-xl bg-accent-deep px-8 py-12 text-center">
           <h2 className="text-2xl font-bold tracking-tight text-accent-foreground sm:text-3xl">
             Hardware down? Let&apos;s get you a spare.
           </h2>

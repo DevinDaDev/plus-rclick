@@ -15,7 +15,7 @@ export default function PlusBadge({ className = "" }: { className?: string }) {
       >
         <path d="M12 5v14M5 12h14" />
       </svg>
-      Includes 1 Year of Plus
+      Includes 1 Year of <span className="italic">Plus</span>
     </span>
   );
 }

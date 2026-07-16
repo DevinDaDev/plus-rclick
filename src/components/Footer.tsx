@@ -9,7 +9,7 @@ export default function Footer() {
             Right Click <span className="italic font-bold text-plus">Plus</span>
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Plus is included for one year with qualifying purchases.
+            <span className="italic font-semibold text-plus">Plus</span> is included for one year with qualifying purchases.
           </p>
         </div>
 

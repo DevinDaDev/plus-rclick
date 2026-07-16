@@ -49,7 +49,7 @@ export default function NetworkPage() {
             Buy your network equipment from Right Click and we store a spare
             loaded with your configuration. When yours fails, the replacement
             ships ready to plug in — no reprogramming, targeted at 4 business
-            hours, same day. One year of Plus is included.
+            hours, same day. One year of <span className="italic font-semibold text-plus">Plus</span> is included.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {["Network switches", "Routers & gateways", "Firewalls", "Wi-Fi access points"].map(
@@ -77,7 +77,7 @@ export default function NetworkPage() {
           <Link href="/register" className="font-semibold text-accent hover:text-accent-hover">
             Register its serial number
           </Link>{" "}
-          to activate your Plus coverage.
+          to activate your <span className="italic font-semibold text-plus">Plus</span> coverage.
         </p>
       </section>
 
@@ -120,8 +120,8 @@ export default function NetworkPage() {
           <div className="mt-10 rounded-xl border border-border bg-background p-6">
             <h3 className="text-base font-semibold">Good to know</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Plus is not a warranty. Your manufacturer warranty still applies
-              separately and stays unaffected. Plus adds rapid replacement on top
+              <span className="italic font-semibold text-plus">Plus</span> is not a warranty. Your manufacturer warranty still applies
+              separately and stays unaffected. <span className="italic font-semibold text-plus">Plus</span> adds rapid replacement on top
               of it.
             </p>
           </div>

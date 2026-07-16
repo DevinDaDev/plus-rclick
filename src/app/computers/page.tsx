@@ -77,7 +77,7 @@ export default function ComputersPage() {
           <Link href="/register" className="font-semibold text-accent hover:text-accent-hover">
             Register its serial number
           </Link>{" "}
-          to activate your Plus coverage.
+          to activate your <span className="italic font-semibold text-plus">Plus</span> coverage.
         </p>
       </section>
 
@@ -134,8 +134,8 @@ export default function ComputersPage() {
             <div className="rounded-xl border border-border bg-background p-6">
               <h3 className="text-base font-semibold">Warranty is separate</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Plus is not a warranty. Your manufacturer warranty still applies
-                separately and stays unaffected. Plus adds rapid replacement on
+                <span className="italic font-semibold text-plus">Plus</span> is not a warranty. Your manufacturer warranty still applies
+                separately and stays unaffected. <span className="italic font-semibold text-plus">Plus</span> adds rapid replacement on
                 top of it.
               </p>
             </div>

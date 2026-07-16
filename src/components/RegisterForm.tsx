@@ -63,7 +63,7 @@ export default function RegisterForm() {
           Device registered
         </h2>
         <p className="mx-auto mt-3 max-w-md text-muted-foreground">
-          Your device is covered by Right Click Plus for one year. If it ever
+          Your device is covered by Right Click <span className="italic font-semibold text-plus">Plus</span> for one year. If it ever
           fails, request your pre-configured spare and we will get you back up
           and running.
         </p>
@@ -88,7 +88,7 @@ export default function RegisterForm() {
           <p className="font-semibold">Thank you for your order!</p>
           <p className="mt-1 text-sm text-muted-foreground">
             One last step: register your device&apos;s serial number below to
-            activate your included year of Plus. If you don&apos;t have the
+            activate your included year of <span className="italic font-semibold text-plus">Plus</span>. If you don&apos;t have the
             serial number yet, you can come back to this page after delivery.
           </p>
         </div>
