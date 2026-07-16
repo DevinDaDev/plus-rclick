@@ -11,6 +11,7 @@ const links = [
   { href: "/network", label: "Network Equipment" },
   { href: "/computers", label: "Business Computers" },
   { href: "/request", label: "Request Spare" },
+  { href: "/account", label: "Account" },
 ];
 
 export default function Header() {
